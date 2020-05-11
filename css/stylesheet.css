@@ -1,0 +1,202 @@
+/******css main*/
+:root {
+    --maincolor: #cda34f;
+    --green: #636b46;
+    --mauchu: #373f27;
+}
+
+@font-face {
+    font-family: "iCielBC OldStyle";
+    src: url(../fonts/iCielBCOldStyle-Regular.ttf);
+}
+
+body {
+    font-family: "iCielBC OldStyle";
+}
+
+p{
+    line-height: 10px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+h6{
+    font-size: 14px;
+    line-height: 22px;
+}
+/*css mani end*/
+
+/******css tophead*/
+#tophead {
+    background-color: var(--maincolor);
+    height: 40px;
+}
+
+#tophead .navbar {
+    box-shadow: none;
+    padding: 0px;
+}
+
+#tophead ul.navbar-nav {
+    color: white;
+    line-height: 0px;
+}
+
+#tophead .navbar-nav .search .modal-dialog {
+    max-width: unset;
+    margin: 0px;
+}
+
+#tophead .search .modal .modal-dialog .modal-content {
+    padding: 20px 40px;
+}
+
+#tophead .search .modal .modal-dialog .modal-content h5.modal-title {
+    color: var(--maincolor);
+    display: block;
+}
+
+#tophead .modal .modal-dialog .modal-body input.search-input {
+    border: none;
+    border-radius: unset;
+    display: inline-block;
+    outline: none;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+#tophead .modal-body .btn {
+    display: inline-block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #000;
+}
+
+#tophead .modal-body .btn:hover {
+    background-color: var(--maincolor);
+    color: #ffffff;
+}
+
+/*css tophead end*/
+
+/******css drop-profile*/
+#tophead .profile .dropdown-menu {
+    visibility: hidden;
+    width: 260px;
+    padding: 17px;
+    position: absolute;
+    right: -30px;
+    left: auto;
+    top: 150%;
+    display: unset;
+    float: unset;
+    opacity: 0;
+    transition: visibility 700ms, opacity 600ms, transform 500ms;
+
+}
+
+#tophead .profile .dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-10%);
+    webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+#tophead .profile .btn {
+    background-color: var(--maincolor);
+    color: #ffffff;
+    box-shadow: none;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+
+#tophead .profile .btn:hover {
+    background-color: #fff;
+    border: 0,5px solid var(--green);
+    color: var(--maincolor);
+    webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/*css dropdown profile end*/
+
+/******css dropdown cart (demo-click)*/
+#tophead .cart-drop .dropdown-menu {
+    visibility: hidden;
+    width: 260px;
+    padding: 17px;
+    position: absolute;
+    right: -30px;
+    left: auto;
+    top: 150%;
+    display: unset;
+    float: unset;
+    opacity: 0;
+    transition: visibility 700ms, opacity 600ms, transform 500ms;
+}
+
+#tophead .cart-drop .dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-10%);
+}
+/*css dropdown cart end*/
+
+/*****css modal cart demo*/
+#tophead .cart-modal .modal-content{
+    padding: 10px 15px;
+}
+#tophead .cart-modal .modal-header h5.modal-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--green);
+    text-align: left;
+}
+#tophead .cart-modal .modal-dialog {
+    position: absolute;
+    display: flex;
+    width: auto;
+    min-height: 100%;
+    height: auto;
+    margin: 0px;
+    pointer-events: none;
+    right: 0;
+    margin: 0px;
+    max-width: 500px;
+}
+/*css modal cart demo end*/
+
+/*****css cart modal costume*/
+#tophead .cart-modal-custome #box-costume{
+    background-color: white;
+    border: 0,5px solid black;
+    padding: 20px;
+    width: 400px;
+    min-height: 100%;
+    height: auto;
+    position: fixed;
+    left: auto;
+    right: -400px;
+    top: 0px;
+    color: #000;
+    text-align: left;
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(5,0,0,0.1);
+}
+/*css cart modal costume end*/
+ .showcart {
+    right: 0px !important;
+}
+
+/*****css menubar*/
+#menubar .navbar a.navbar-brand{
+    position: absolute;
+    left: 45%;
+    right: auto;
+    margin-right: 0px;
+}
