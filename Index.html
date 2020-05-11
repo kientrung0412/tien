@@ -126,7 +126,7 @@
                 <!-- Full Height Modal Right -->
             </li>
             <li class="nav-item cart-modal-custome d-non">
-                <a href="#" class="nav-link" type="button" id="btntest"  value="Get focus">
+                <a href="#" class="nav-link" type="button" id="show-cart">
                     <img src="img/Button/giỏ%20hàng.png" alt="" class="img-fluid"></a>
                 <div id="box-costume">
                     <div class="header border-bottom mb-3">
@@ -134,9 +134,10 @@
                     </div>
                     <div class="body d-flex border-bottom mb-3"></div>
                     <div class="footer d-flex justify-content-center">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
+                    <div id="close-cart" class="close-cart"></divid->
                 </div>
             </li>
         </ul>
@@ -217,9 +218,28 @@
 <!--    }-->
 <!--</script>-->
 <script>
-    $(document).ready(function () {
-        $('#btntest').click(function () {
-            $("#box-costume").addClass('showcart');
+    // $(document).ready(function () {
+    //     $('#btntest').focus(function () {
+    //         $("#box-costume").addClass('showcart');
+    //     });
+    //
+    // });
+    $(document).ready(function(){
+
+// Menu Add Class Left
+        $("#show-cart").click(function(){
+            $("#box-costume").toggleClass("showcart");
+            $("#close-cart").toggleClass("close-cart-active")
+        });
+
+//  Menu Add Class Close
+        $('button.btn-close, .close-cart').click(function(){
+            $("#box-costume").removeClass("showcart");
+            $("#close-cart").removeClass("close-cart-active")
+        });
+// Menu Dropdown menu active
+        $(".dropdownmenu").click(function(){
+            $(".sub-menu").toggleClass("active"),fadeIn(46000);
         });
     });
 </script>

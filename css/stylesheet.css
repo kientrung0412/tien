@@ -193,6 +193,25 @@ h6{
     right: 0px !important;
 }
 
+.close-cart {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 400px;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+.close-cart-active {
+    background-color: rgba(0,0,0,0,1);
+    visibility: visible;
+}
 /*****css menubar*/
 #menubar .navbar a.navbar-brand{
     position: absolute;
